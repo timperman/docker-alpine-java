@@ -49,3 +49,6 @@ RUN mkdir /opt \
     && rm -fr /tmp/* \
     && rm /glibc-2.21-r2.apk \
     && apk del curl bash
+
+ENTRYPOINT [ "java" ]
+CMD [ "-version" ]
